@@ -1,0 +1,51 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+.DS_Store
+gvite
+!gvite/
+gvite.log
+
+# vscode
+.vscode
+
+# Test binary, build with `go test -c`
+*.test
+testdata/trie
+testdata/vm_context
+testdata/ledger
+testdata/ledger_file
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Leveldb database files for test, put it here temporarily
+vite_leveldb_database
+vite.p2p.db
+
+# idea files
+.idea/
+
+# Build files
+build/
+
+vite/net/simular/genesis.go
+
+**/p2p/**/simular/**
+!**/p2p/**/simular/**/*.go
+**/net/**/simular/**
+!**/net/**/simular/**/*.go
+
+# node.js
+node_modules
+*.log
+package-lock.json
+sw.*
+workbox-*
+
+# bin/dump_branch_diff
+commits-logs/
